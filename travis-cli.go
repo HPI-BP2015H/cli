@@ -12,8 +12,7 @@ func main() {
 	app.Name = "cli"
 	app.Usage = "a travis-ci command line client"
 	app.Action = func(c *cli.Context) {
-		//github := github.NewClient(nil)
-		println("main!")
+		println("Usage: travis-cli COMMAND ...\n \n Available commands: \n \n      login      logs you in!")
 
 	}
 	app.Commands = []cli.Command{
