@@ -24,6 +24,15 @@ func main() {
 				login()
 			},
 		},
+
+		{
+			Name:    "test",
+			Aliases: []string{"a"},
+			Usage:   "add a task to the list",
+			Action: func(c *cli.Context) {
+				test()
+			},
+		},
 	}
 
 	app.Run(os.Args)
