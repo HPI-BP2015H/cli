@@ -3,7 +3,7 @@ package main
 import "github.com/HPI-BP2015H/go-travis/travis"
 
 func test() error {
-	travisToken := travis.myTravisToken()
+	travisToken := myTravisToken()
 
 	travisClient := travis.NewClient(travisToken, nil)
 
