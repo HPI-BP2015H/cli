@@ -11,7 +11,7 @@ import (
 func login() error {
 
 	//this needs the myToken.go file. This should be changed when its ready to ship...
-	token := myToken()
+	token := myGithubToken()
 	if token == "" {
 		println("I need your github Access Token to log you in. Please paste it here:")
 		fmt.Scanln(&token)
